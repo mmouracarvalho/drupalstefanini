@@ -1,0 +1,14 @@
+<h1>
+  <a href="node/{{ node.id }}">
+    {{ node.field_nome_do_evento.value }}
+  </a>
+</h1>
+<h4>
+  {{ node.field_data_do_evento.value|date("d/m/Y H:i") }}
+</h4>
+<pre>
+  {{ node.field_descricao_do_evento.value }}
+</pre>
+<h5>
+  Quantidade de Vagas Restantes: {{ node.field_quantidade_de_vagas_ainda_.value }}
+</h5>

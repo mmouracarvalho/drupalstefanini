@@ -1,0 +1,8 @@
+{% if content.field_quantidade_de_vagas_ainda_.0['#markup'] == "0" %}
+    <h1>Desculpe, não há mais vagas para este evento! </h1>
+{% else %}
+    <h1>{{ content.field_nome_do_evento }}</h1>
+    <h4>{{ content.field_data_do_evento }}</h4>
+    <pre>{{ content.field_descricao_do_evento }}</pre>
+    <h5>{{ content.field_quantidade_de_vagas_ainda_ }}</h5>
+{% endif %}
